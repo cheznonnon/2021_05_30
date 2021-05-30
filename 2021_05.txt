@@ -1,0 +1,231 @@
+
+
+----------==========----------==========----------==========----------
+
+
+"Eat Your Own Catfood."
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2021/05/30
+
+
+BUGFIX
+
+
+	win32/win_txtbox/00_helper.c
+		n_win_txtbox_caret()
+			OLD : crash in some cases
+			NEW : fixed
+			[x] : RTL support is dropped
+	win32/win_txtbox/19_dedit.c
+		n_win_txtbox_edit_del()
+			OLD : crash in some cases
+			NEW : fixed
+	win32/win_txtbox/21_menu.c
+		when readonly : condition to disable
+			OLD : inaccurate
+			NEW : fixed
+	win32/gdi.c
+		align
+			OLD : not working
+			NEW : fixed
+	win32/win_inputopopup.c
+		icon buttons
+			OLD : memory and handle leak
+			NEW : fixed
+	win32/win_smallbutton_direct.c
+		Win95 : color scheme
+			OLD : COLOR_3DDKSHADOW : cause white out
+			NEW : calculate from other colors
+			[!] : Win95 returns COLOR_3DDKSHADOW white
+
+	All
+		input popup
+			OLD : UI will disappear when run many times
+			NEW : fixed
+			[!] : leak causes
+	CatPad
+		TxtBox
+			OLD : crash in some cases
+			NEW : fixed
+	Neko no Te
+		New : #1
+			OLD : some feature is broken
+			NEW : a little simplified
+		New : #2 : icon buttons
+			OLD : memory and handle leak
+			NEW : fixed
+	nmemo
+		darkmode
+			OLD : not supported
+			NEW : fixed
+	Nonnon Paint
+		Resizer : icon buttons
+			OLD : memory and handle leak
+			NEW : fixed
+	OrangeCat
+		Info View : UI layout
+			OLD : misbehave when a text is empty
+			NEW : fixed
+
+
+NEW_FEATURE
+
+
+	all
+		dark mode
+			NEW : revamped
+			[!] : many usages are changed
+
+	win32/win_txtbox/16_smallbutton.c
+		supported type
+			OLD : win_smallbutton.c and win_smallbutton_direct.c
+			NEW : win_smallbutton_direct.c only
+			[?] : hard to make ends meet
+	win32/win_txtbox.c
+		performance
+			NEW : faster than older
+		revamped again
+			NEW : many newer introduced bugs are fixed
+
+	All
+		dark mode : background
+			OLD :  zero black : RGB(  0, 0, 0 )
+			NEW : matte black : RGB( 66,66,66 )
+	_Nonnon Typing
+		released
+			NEW : experimental typing trainer
+	Character Map
+		smallbutton
+			NEW : use win32/win_smallbutton_direct.c
+	Neko no Te
+		smallbutton
+			NEW : use win32/win_smallbutton_direct.c
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2021/05/20
+
+
+BUGFIX
+
+
+	win32/win_txtbox.c
+		when text line count is changed
+			OLD : redraw error
+			NEW : fixed
+		partial selection bottom to top and press left arrow key
+			OLD : misbehave
+			NEW : fixed
+		style option names
+			OLD : inaccurate
+			NEW : fixed
+
+	CatPad
+		key bindings : F5
+			OLD : you cannot insert
+			NEW : fixed
+		input resizer : small buttons
+			OLD : redraw error
+			NEW : fixed
+			[x] : NEW_FEATURE @ 2021/05/10
+	hunyapiyo2
+		timer
+			OLD : KillTimer() is missing
+			NEW : fixed
+
+
+NEW_FEATURE
+
+
+	game/transition.c
+		instances
+			OLD : only one
+			NEW : multiple
+			[!] : usage is changed
+
+	project/macro.c
+		n_project_dialog_error()
+			NEW : error dialog
+
+	win32/win_txtbox.c
+		performance
+			NEW : faster than older
+		usability
+			NEW : more accurate than older
+
+	Nonnon FTP
+		when error : dialog type
+			OLD : information
+			NEW : error
+		when error at loading
+			OLD : empty window remains
+			NEW : exit
+	OrangeCat
+		Breadcrumb Address Band : drives
+			NEW : a drive label is displayed
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2021/05/10
+
+
+BUGFIX
+
+
+	win32/win_simplemenu.c
+		fade-out
+			OLD : draw error
+			NEW : fixed
+
+	CatPad
+		Win9x/NT4/2000/XP : TxtBox : VISIBLE
+			OLD : not used but set
+			NEW : fixed
+			[!] : faster than older
+	CAR-RACE 2
+		map : outbound area
+			OLD : not clamped
+			NEW : fixed
+	Felis
+		Win9x/NT4/2000/XP : TxtBox : VISIBLE
+			OLD : not used but set
+			NEW : fixed
+			[!] : faster than older
+
+
+NEW_FEATURE
+
+
+	neutral/bmp/color.c
+		n_bmp_alpha_visible_pixel()
+			NEW : faster than older
+	neutral/bmp.c
+		n_bmp_alpha_visible()
+			NEW : faster than older
+
+	win32/win_txtbox.c
+		revamped
+			NEW : draw engine is re-implemented
+			[!] : usage is changed
+			[!] : almost faster than older
+
+
+----------==========----------==========----------==========----------
+
