@@ -12,6 +12,25 @@
 Change Log
 
 
+2021/05/30 #1 : 2021/05/31
+
+
+BUGFIX
+
+
+	win32/win_txtbox/24_subclass.c
+		WM_IME_COMPOSITION : when selected before input
+			OLD : confusion occurs
+			NEW : fixed
+			[!] : shift selecting will misbehave
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
 2021/05/30
 
 
@@ -23,7 +42,7 @@ BUGFIX
 			OLD : crash in some cases
 			NEW : fixed
 			[x] : RTL support is dropped
-	win32/win_txtbox/19_dedit.c
+	win32/win_txtbox/19_edit.c
 		n_win_txtbox_edit_del()
 			OLD : crash in some cases
 			NEW : fixed
