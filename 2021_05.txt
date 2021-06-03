@@ -12,6 +12,30 @@
 Change Log
 
 
+2021/05/30 #4 : 2021/06/03
+
+
+BUGFIX
+
+
+	win32/win_txtbox.c
+		caret
+			OLD : inaccurate
+			NEW : fixed
+			[!] : #1 up/down movement when selected
+			[!] : #2 shift up/down selection release problem
+		shift selection : when over a screen
+			OLD : not auto-scrolled
+			NEW : fixed
+			[!] : caret movement is also fixed by this change
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
 2021/05/30 #3 : 2021/06/02
 
 
