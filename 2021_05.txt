@@ -12,6 +12,48 @@
 Change Log
 
 
+2021/05/30 #5 : 2021/06/04
+
+
+BUGFIX
+
+
+	win32/win_txtbox.c
+		the last line : when clicked
+			OLD : do nothing
+			NEW : clamp like key input
+		eol mark
+			OLD : some calculation is not included
+			NEW : fixed
+		multi-line deletion
+			OLD : misbehave
+			NEW : fixed
+		shift selection : up/down : CJK characters
+			OLD : misbehave
+			NEW : fixed
+		unselect : caret position
+			OLD : warp in some cases
+			NEW : fixed
+		full stop
+			OLD : you cannot unselect a string
+			NEW : fixed
+		Vista/7 : DWM is ON
+			OLD : broken image
+			NEW : fixed
+			[!] : contour function will be disabled
+
+	OrangeCat
+		WinXP or earlier
+			OLD : "MS Gothic" is not used
+			NEW : fixed
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
 2021/05/30 #4 : 2021/06/03
 
 
