@@ -12,6 +12,31 @@
 Change Log
 
 
+2021/05/30 #6 : 2021/06/05
+
+
+BUGFIX
+
+
+	win32/win_txtbox.c
+		TRANSBG
+			NEW : contour is revived
+
+
+NEW_FEATURE
+
+
+	neutral/bmp/filter.c
+		n_bmp_rasterizer_all()
+			NEW : you can set an area
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
 2021/05/30 #5 : 2021/06/04
 
 
