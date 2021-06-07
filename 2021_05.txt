@@ -12,6 +12,30 @@
 Change Log
 
 
+2021/05/30 #7 : 2021/06/05
+
+
+BUGFIX
+
+
+	win32/win_txtbox.c
+		CJK characters : shift selection : caret
+			OLD : misbehave
+			NEW : fixed
+		shift selection : release selection
+			OLD : caret will be at tail
+			NEW : fixed
+		shift selection : when x scrroll is on
+			OLD : reset to zero
+			NEW : fixed
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
 2021/05/30 #6 : 2021/06/05
 
 
